@@ -7,7 +7,7 @@ export const Lyric = () => {
   const searchParams = new URLSearchParams(window.location.search);
   const title = searchParams.get("title");
 
-  const [card, setCard] = useState(null);
+  const [card, setCard] = useState(<LyricCard />);
 
   useEffect(() => {
     // Define your logic for setting the card based on the title
