@@ -11,10 +11,10 @@ export const Lyric = () => {
 
   useEffect(() => {
     // Define your logic for setting the card based on the title
-    if (title === "TakeItEasy") {
+    if (title && title === "TakeItEasy") {
       setCard(<LyricCard />);
     } else {
-      setCard(<NF />);
+      setCard(<LyricCard />);
     }
   }, [title]);
 
