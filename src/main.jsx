@@ -6,7 +6,7 @@ import { BrowserRouter, HashRouter as Router} from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 
-    <Router basename="/Lyric-and-thoughts">
+    <Router >
   {" "}
       <App />
     </Router>
