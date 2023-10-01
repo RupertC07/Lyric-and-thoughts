@@ -9,11 +9,11 @@ const App = () => {
     <div className="">
       <Routes>
         <Route element={<MainLayout />}>
-          <Route path="/Page1" element={<Lyric />} />
-          <Route path="/rt/:title" element={<Lyric />} />
+          <Route path="/https://rupertc07.github.io/Lyric-and-thoughts/" element={<Lyric />} />
+          <Route path="/https://rupertc07.github.io/Lyric-and-thoughts/rt/:title" element={<Lyric />} />
         </Route>
 
-        <Route path="*" element={<NotFound />} />
+        <Route path="https://rupertc07.github.io/Lyric-and-thoughts/*" element={<NotFound />} />
       </Routes>
     </div>
   );
