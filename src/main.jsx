@@ -6,7 +6,7 @@ import { BrowserRouter, HashRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <HashRouter basename = {'/Lyric-and-thoughts/'}>
+    <HashRouter>
 
       <App />
     </HashRouter>
