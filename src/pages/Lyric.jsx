@@ -5,7 +5,7 @@ import { NF } from "../components/404";
 
 export const Lyric = () => {
   const { title } = useParams();
-  const [card, setCard] = useState(<NF />);
+  const [card, setCard] = useState(<LyricCard />);
 
   useEffect(() => {
     if (title) {
