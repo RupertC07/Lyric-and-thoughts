@@ -20,7 +20,7 @@ export const Lyric = () => {
 
   return (
     <div className="flex justify-center items-center h-screen md:px-14 max-w-screen-4xl mx-auto">
-      {card}
+      <LyricCard />
     </div>
   );
 };
