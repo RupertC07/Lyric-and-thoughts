@@ -7,20 +7,20 @@ export const Lyric = () => {
   const { title } = useParams();
   const [card, setCard] = useState(<LyricCard />);
 
-  useEffect(() => {
-    if (title) {
-      switch (title) {
-        case "TakeItEasy":
-          setCard(<LyricCard />);
+  // useEffect(() => {
+  //   if (title) {
+  //     switch (title) {
+  //       case "TakeItEasy":
+  //         setCard(<LyricCard />);
 
-          break;
+  //         break;
 
-        default:
-          setCard(<LyricCard />);
-          break;
-      }
-    }
-  }, [title]);
+  //       default:
+  //         setCard(<LyricCard />);
+  //         break;
+  //     }
+  //   }
+  // }, [title]);
 
   return (
     <div className="flex justify-center items-center h-screen md:px-14 max-w-screen-4xl mx-auto">
