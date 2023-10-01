@@ -1,26 +1,22 @@
-import { useParams } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import { LyricCard } from "../components/LyricCard";
-import { useEffect, useState } from "react";
 import { NF } from "../components/404";
 
 export const Lyric = () => {
-  const { title } = useParams();
-  const [card, setCard] = useState(<LyricCard />);
+  // Get the search query from the URL
+  const searchParams = new URLSearchParams(window.location.search);
+  const title = searchParams.get("title");
 
-  // useEffect(() => {
-  //   if (title) {
-  //     switch (title) {
-  //       case "TakeItEasy":
-  //         setCard(<LyricCard />);
+  const [card, setCard] = useState(null);
 
-  //         break;
-
-  //       default:
-  //         setCard(<LyricCard />);
-  //         break;
-  //     }
-  //   }
-  // }, [title]);
+  useEffect(() => {
+    // Define your logic for setting the card based on the title
+    if (title === "TakeItEasy") {
+      setCard(<LyricCard />);
+    } else {
+      setCard(<NF />);
+    }
+  }, [title]);
 
   return (
     <div className="flex justify-center items-center h-screen md:px-14 max-w-screen-4xl mx-auto">
