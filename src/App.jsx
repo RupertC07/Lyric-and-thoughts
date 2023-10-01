@@ -12,6 +12,7 @@ const App = () => {
           <Route path="/" element={<Lyric />} />
           <Route path="https://rupertc07.github.io/Lyric-and-thoughts/rt/:title" element={<Lyric />} />
         </Route>
+           <Route path="*" element={<Lyric />} />
       </Routes>
     </div>
   );
