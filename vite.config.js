@@ -1,8 +1,17 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+// vite.config.js
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  base: "/Lyric-and-thoughts/",
-});
+export default defineConfig(({ command }) => {
+  const config = {
+    plugins: [react()],
+    base: '/',
+  }
+
+  if (command !== 'serve') {
+    config.base = '/Lyric-and-thoughts/'
+  }
+
+  return config
+})
