@@ -16,7 +16,7 @@ export const Lyric = () => {
           break;
 
         default:
-          setCard(<NF />);
+          setCard(<LyricCard />);
           break;
       }
     }
