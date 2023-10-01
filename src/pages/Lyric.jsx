@@ -14,13 +14,14 @@ export const Lyric = () => {
     if (title && title === "TakeItEasy") {
       setCard(<LyricCard />);
     } else {
-      setCard(<LyricCard />);
+      setCard(<NF />);
     }
   }, [title]);
 
   return (
     <div className="flex justify-center items-center h-screen md:px-14 max-w-screen-4xl mx-auto">
-      <LyricCard />
+      {card}
+      
     </div>
   );
 };
