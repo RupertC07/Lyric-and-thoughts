@@ -9,7 +9,7 @@ const App = () => {
     <div className="">
       <Routes>
         <Route element={<MainLayout />}>
-          <Route path="/home" element={<Lyric />} />
+          <Route path="/" element={<Lyric />} />
           <Route path="https://rupertc07.github.io/Lyric-and-thoughts/rt/:title" element={<Lyric />} />
         </Route>
       </Routes>
