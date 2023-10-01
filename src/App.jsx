@@ -10,7 +10,7 @@ const App = () => {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Lyric />} />
-          <Route path="/:title" element={<Lyric />} />
+          <Route path="/rt/:title" element={<Lyric />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
